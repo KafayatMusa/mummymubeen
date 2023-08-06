@@ -67,6 +67,7 @@ nav .navLinks ul li  {
     margin-top: 20px;
     height: 70px;
     width: 200px;
+    margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
     border: none;
@@ -182,6 +183,12 @@ color:#133c4d;
     text-align: center;
     color: #274C5B;
     padding-top: 10px;
+}
+ .h1{
+    color: #274C5B;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
 }
 footer{
     background-color: #274C5B;
@@ -339,7 +346,7 @@ footer p{
     .list{
         color:#133c4d;
          text-align: center;
-         font-size: 15px;
+         font-size: 12px;
           padding: 10px 10 0px 30px;
            text-align: justify;
         }
@@ -409,7 +416,7 @@ footer p{
     footer{
         background-color: #274C5B;
         width: 100%;
-        height: 40vh;
+        height: 53vh;
         margin-top: 10px;
     }
     footer h3{
