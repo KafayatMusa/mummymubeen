@@ -43,11 +43,41 @@ nav .navLinks ul li  {
     display: inline-block;
      
  }
+ /* .bar-reverse{
+    display: flex;
+} */
+ .mobile-nav ul{
+    text-align:center;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: #225c74;
+    /* padding-top: 50px; */
+  
+  }
  /* .location a{
     display: none;
  } */
  .bg{
     background-image: url(../image/pexels-photo-280221.jpeg);
+    width: 100%;
+	height:100vh;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+    margin-top: 0px;
+}
+.bg-his{
+    background-image: url(../image/istockphoto-177096616-612x612.jpg);
+    width: 100%;
+	height:100vh;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+    margin-top: 0px;
+}
+.bg-vis{
+    background-image: url(../image/istockphoto-1292399669-612x612.jpg);
     width: 100%;
 	height:100vh;
 	background-size: cover;
@@ -94,6 +124,21 @@ nav .navLinks ul li  {
     font-size: 30px;
     font-weight: bold;  
 }
+.bg-his .history-h1{
+    padding-top: 200px;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bg-vis .history-h1{
+    padding-top: 200px;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
 .about{
     width: 60%;
     margin: 10px 0px 0px 250px;
@@ -129,9 +174,9 @@ color:#133c4d;
     text-align: center;
     margin-top: 20px;
 }
-.visit-area img{
+/* .visit-area img{
     border-radius: 20px;
-}
+} */
 .left{
     width: 600px;
     height: 500px;
@@ -147,7 +192,7 @@ color:#133c4d;
     width: 140px;
     height: 130px;
     margin-left: 37px;
-    border-radius: 55px;
+    border-radius: 70px;
 }
 .testimonial p{
     text-align: center;
@@ -221,6 +266,11 @@ footer p{
     color: white;
     text-decoration: none;
 }
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    color: #225c74;
+    /* display: none; */
+}
 
 
 @media screen  and (min-width:270px) and (max-width:1000px){
@@ -231,14 +281,21 @@ footer p{
         margin-top: 15px;
         margin-left: 5px;
         text-align: right;
+        /* text-decoration: none; */
+    }
+    .fa-bars:before, .fa-navicon:before {
+        content: "\f0c9";
+        color: white;
+        /* display: none; */
     }
 
     /* .location a {
         text-decoration: none;
     } */
     .nav{
-        display: flex;
+        display: block;
         justify-content: space-between;
+        color: white;
     }
     .mobile-nav{
         display: block;
@@ -268,8 +325,10 @@ footer p{
     justify-content: space-between;
     /* margin: 0 10px 0 50px; */
     }
-    .mobileLinks{
+    .mobileLinks ul{
         display: block;
+        /* color: red; */
+        text-decoration: none;
     }
     .location img{
         width: 70%;
@@ -277,19 +336,24 @@ footer p{
       
     }
    
-.mobileLinks {
+.mobile-nav{
     display: block;
 }
 
-.mobileLinks {
+.mobileLinks{
     display: none;
 }
-.mobileLinks  {
-    text-align: center;
+.mobile-nav ul{
+    text-align:center;
     width: 100%;
     height: 100vh;
+    display: block;
     background-color: #225c74;
-    padding-top: 50px;
+    /* padding-top: 50px; */
+  
+  }
+  .location h1{
+    font-size: 35px;
 }
    
     .visit-area h2{
@@ -315,6 +379,10 @@ footer p{
         height:300px;
         padding-top: 30px;
     }
+    .bg .history-h1{
+        padding-top: 80px;
+        color: white;
+    }
     .bg{
         background-image: url(../image/pexels-photo-280221.jpeg);
         width: 100%;
@@ -324,10 +392,42 @@ footer p{
         background-position: center;
         /* margin-top: -50px; */
     }
+    .bg-his{
+        background-image: url(../image/istockphoto-177096616-612x612.jpg);
+        width: 100%;
+        height:30vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* margin-top: 0px; */
+    }
+    .bg-vis{
+        background-image: url(../image/istockphoto-1292399669-612x612.jpg);
+        width: 100%;
+        height:30vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* margin-top: 0px; */
+    }
     .bg h1{
         text-align: center;
         padding-top:20px;
         color: #274C5B;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .bg-his .history-h1{
+        padding-top: 90px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .bg-vis .history-h1{
+        padding-top: 90px;
+        color: black;
         font-size: 30px;
         font-weight: bold;
         font-style: italic;
