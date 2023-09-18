@@ -269,7 +269,7 @@ footer p{
 .fa-bars:before, .fa-navicon:before {
     content: "\f0c9";
     color: #225c74;
-    /* display: none; */
+    display: none;
 }
 
 
@@ -281,12 +281,14 @@ footer p{
         margin-top: 15px;
         margin-left: 5px;
         text-align: right;
-        /* text-decoration: none; */
+    }
+    nav a{
+        text-decoration: none;
     }
     .fa-bars:before, .fa-navicon:before {
         content: "\f0c9";
         color: white;
-        /* display: none; */
+        display:block;
     }
 
     /* .location a {

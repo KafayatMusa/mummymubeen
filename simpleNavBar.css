@@ -8,10 +8,8 @@ a{
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #274C5B;
+    background-color: #225c74;
     padding:0 20px;
-    height: 100vh;
-    width: 100%;
 }
 label a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,7 +40,7 @@ label a{
   }
   .mobileLinks ul li{
       list-style: none;
-      padding:20px;
+      padding:50px;
       display:block;
       justify-content: space-around;
       
@@ -50,59 +48,44 @@ label a{
   .mobileLinks ul li a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: azure;
-    font-size: 20px;
+    font-size: 40px;
   }
 nav .fa{
     display: none;
 } 
-.fa-bars:before, .fa-navicon:before {
-    content: "\f0c9";
-    color: #274C5B;
-    /* display: none; */
-}
  
 
 
 
  
 @media(max-width:958px){
-    nav .fa{
+    nav .head a h1{
         font-size: 25px;
-        color: #274C5B;
+        color: white;
         display: block;
         text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    /* .fa-bars:before, .fa-navicon:before {
-        content: "\f0c9";
-        color: white;
-        display: none;
-    } */
-  
     nav{
         display: block;
     }
     .navLinks{
         display: none;
     }
-label{
+.head{
     display: flex;
     justify-content: space-between;
+    padding: 30px 0;
 }
-.mobile-nav  h1{
-    color: white;
-    font-size: 25px;
-    padding: 10px 0 0 0;
+.logo{
+    display: flex;
 }
-/* .mobileLinks{
-    display: block;
-    justify-content: space-between;
-    background-color: #274C5B;
-    padding:0 50px 0px 0px;
-    height: 100vh;
-    width: 100%;
-} */
-.mobileLinks a{
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin:-10px 0 0 0;
+}
+.logo h1{
     color: white;
-    display: block;
 }
 }
